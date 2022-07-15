@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro Usuario | LSMF</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="form2.documento.focus()">
+
+    <div class="login-box">
+        <!--crea una caja imaginaria-->
+        <img src="imagenes/logo1.png" class="avatar" alt="Avatar Image">
+        <!--insertamos una imagen-->
+
+        <h2>REGISTRO DE USUARIOS</h2>
+        <!--Inserra titulo-->
+        <form method="post" name="form2" action="include/Registro.php" autocomplete="off">
+        <!--crea formularios-->
+         <input type="text" name="documento" id="documento" placeholder="Ingrese Documento Identidad">
+         <!-- Caja de texto donde el usuario coloca el documento de identidad -->
+         <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombres Completos">
+         <!-- Caja de texto donde el usuario coloca el nombre completo -->
+         <input type="text" name="usuario" id="usuario" placeholder="Ingrese un Usuario">
+         <!-- Caja de texto donde el usuario digite texto -->
+         <input type="password" name="clave" id="password" placeholder="Ingrese Contraseña">
+         <!-- caja de texto donde el usuario coloca la contraseña -->
+         <input type="submit" name="Registro" id="Registro" value="Registrarme">
+         <!--Crear el boton-->
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
